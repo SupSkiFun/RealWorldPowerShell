@@ -1,0 +1,18 @@
+[
+  {
+    "HostName": "myhost1-ogg.mydomain.org",
+    "Action": "yum",
+    "Changed": true,
+    "Results": [
+      "Loaded plugins: fastestmirror, langpacks, product-id, search-disabled-repos,\n              : subscription-manager\n\nThis system is not registered with an entitlement server. You can use subscription-manager to register.\n\nLoading mirror speeds from cached hostfile\n * base: mirror.netdepot.com\n * epel: ewr.edge.kernel.org\n * extras: mirror.cogentco.com\n * updates: mirrors.tripadvisor.com\nResolving Dependencies\n--> Running transaction check\n---> Package powershell.x86_64 0:7.1.2-1.rhel.7 will be updated\n---> Package powershell.x86_64 0:7.1.3-1.rhel.7 will be an update\n--> Finished Dependency Resolution\n\nDependencies Resolved\n\n================================================================================\n Package       Arch      Version           Repository                      Size\n================================================================================\nUpdating:\n powershell    x86_64    7.1.3-1.rhel.7    packages-microsoft-com-prod     65 M\n\nTransaction Summary\n================================================================================\nUpgrade  1 Package\n\nTotal download size: 65 M\nDownloading packages:\nDelta RPMs disabled because /usr/bin/applydeltarpm not installed.\nRunning transaction check\nRunning transaction test\nTransaction test succeeded\nRunning transaction\n  Updating   : powershell-7.1.3-1.rhel.7.x86_64                             1/2 \n  Cleanup    : powershell-7.1.2-1.rhel.7.x86_64                             2/2 \n  Verifying  : powershell-7.1.3-1.rhel.7.x86_64                             1/2 \n  Verifying  : powershell-7.1.2-1.rhel.7.x86_64                             2/2 \n\nUpdated:\n  powershell.x86_64 0:7.1.3-1.rhel.7                                            \n\nComplete!\n"
+    ]
+  },
+  {
+    "HostName": "myhost2-ogg.mydomain.org",
+    "Action": "yum",
+    "Changed": true,
+    "Results": [
+      "Loaded plugins: fastestmirror, langpacks\nLoading mirror speeds from cached hostfile\n * base: repos-lax.psychz.net\n * epel: pubmirror1.math.uh.edu\n * extras: repos.lax.layerhost.com\n * updates: www.gtlib.gatech.edu\nResolving Dependencies\n--> Running transaction check\n---> Package powershell.x86_64 0:7.1.2-1.rhel.7 will be updated\n---> Package powershell.x86_64 0:7.1.3-1.rhel.7 will be an update\n--> Finished Dependency Resolution\n\nDependencies Resolved\n\n================================================================================\n Package       Arch      Version           Repository                      Size\n================================================================================\nUpdating:\n powershell    x86_64    7.1.3-1.rhel.7    packages-microsoft-com-prod     65 M\n\nTransaction Summary\n================================================================================\nUpgrade  1 Package\n\nTotal download size: 65 M\nDownloading packages:\nDelta RPMs disabled because /usr/bin/applydeltarpm not installed.\nRunning transaction check\nRunning transaction test\nTransaction test succeeded\nRunning transaction\n  Updating   : powershell-7.1.3-1.rhel.7.x86_64                             1/2 \n  Cleanup    : powershell-7.1.2-1.rhel.7.x86_64                             2/2 \n  Verifying  : powershell-7.1.3-1.rhel.7.x86_64                             1/2 \n  Verifying  : powershell-7.1.2-1.rhel.7.x86_64                             2/2 \n\nUpdated:\n  powershell.x86_64 0:7.1.3-1.rhel.7                                            \n\nComplete!\n"
+    ]
+  }
+] 
