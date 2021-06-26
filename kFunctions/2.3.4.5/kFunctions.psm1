@@ -19,7 +19,7 @@ pscustombobject SupSkiFun.Kubernetes.API.Info
     a) Ensure that the API has been proxied:
         Start-Job -ScriptBlock {kubectl proxy --port 8888}
     b) Run the command, returning the information into a variable:
-        $myVar = Get-K8sAPIInfo -Uri http://localhost:8888
+        $myVar = Get-K8sAPIInfo -Uri http://127.0.0.1:8888
 3.  The DefaultDisplayPropertySet = "GroupName","GroupVersion","ResourceKind","ResourceName"
     To see all properties, issue either:
         $myVar | Format-List -Property *
@@ -35,7 +35,7 @@ Before this Advanced Function will work, a proxy to the API must be configured.
     Start-Job -ScriptBlock {kubectl proxy --port 8888}
 
 Once the proxy is established:
-    $myVar = Get-K8sAPIInfo -Uri http://localhost:8888
+    $myVar = Get-K8sAPIInfo -Uri http://127.0.0.1:8888
 
 Display the Default Property Set of all Groups / Resources:
     $myVar
